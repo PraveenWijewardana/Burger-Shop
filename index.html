@@ -3,11 +3,181 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Burger Shop</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+    <!-- SVG Filter (include once in your document) -->
+<svg width="0" height="0" style="position: absolute;">
+  <defs>
+    <filter id="glass-distortion" x="0%" y="0%" width="100%" height="100%">
+      <feTurbulence 
+        type="fractalNoise" 
+        baseFrequency="0.012 0.012"
+        numOctaves="2" 
+        seed="92" 
+        result="noise" 
+      />
+      <feGaussianBlur 
+        in="noise" 
+        stdDeviation="2" 
+        result="blurred" 
+      />
+      <feDisplacementMap 
+        in="SourceGraphic" 
+        in2="blurred" 
+        scale="85"
+        xChannelSelector="R" 
+        yChannelSelector="G" 
+      />
+    </filter>
+  </defs>
+</svg>
+
+
+    <div class="bg-video-wrap" aria-hidden="true">
+        <video class="bg-video" autoplay muted loop playsinline>
+            <source src="media/bg.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="bg-overlay"></div>
+    </div>
+
+    <main class="app-shell">
+        <header class="app-header">
+            <div class="brand">burger shop</div>
+            <div class="tagline">Fresh stacks, crispy fries, quick checkout.</div>
+        </header>
+
+        <section class="layout">
+            <section class="liquid-glass-card">
+                <div class="section-title">menu</div>
+                <div class="product-grid">
+                    <article class="product-card">
+                        <div class="thumb" aria-hidden="true"></div>
+                        <div class="product-info">
+                            <div class="name">Classic Burger</div>
+                            <div class="meta">
+                                <span class="price">$8.50</span>
+                                <button class="btn add">add</button>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="product-card">
+                        <div class="thumb" aria-hidden="true"></div>
+                        <div class="product-info">
+                            <div class="name">Smoky BBQ</div>
+                            <div class="meta">
+                                <span class="price">$9.50</span>
+                                <button class="btn add">add</button>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="product-card">
+                        <div class="thumb" aria-hidden="true"></div>
+                        <div class="product-info">
+                            <div class="name">Spicy Fire</div>
+                            <div class="meta">
+                                <span class="price">$9.00</span>
+                                <button class="btn add">add</button>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="product-card">
+                        <div class="thumb" aria-hidden="true"></div>
+                        <div class="product-info">
+                            <div class="name">Double Cheese</div>
+                            <div class="meta">
+                                <span class="price">$10.50</span>
+                                <button class="btn add">add</button>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="product-card">
+                        <div class="thumb" aria-hidden="true"></div>
+                        <div class="product-info">
+                            <div class="name">Crispy Chicken</div>
+                            <div class="meta">
+                                <span class="price">$8.75</span>
+                                <button class="btn add">add</button>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="product-card">
+                        <div class="thumb" aria-hidden="true"></div>
+                        <div class="product-info">
+                            <div class="name">Mushroom Melt</div>
+                            <div class="meta">
+                                <span class="price">$9.25</span>
+                                <button class="btn add">add</button>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="product-card">
+                        <div class="thumb" aria-hidden="true"></div>
+                        <div class="product-info">
+                            <div class="name">Veggie Stack</div>
+                            <div class="meta">
+                                <span class="price">$8.25</span>
+                                <button class="btn add">add</button>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="product-card">
+                        <div class="thumb" aria-hidden="true"></div>
+                        <div class="product-info">
+                            <div class="name">Truffle Deluxe</div>
+                            <div class="meta">
+                                <span class="price">$11.00</span>
+                                <button class="btn add">add</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <aside class="cart">
+                <div class="section-title">cart</div>
+                <div class="cart-items">
+                    <div class="cart-item">
+                        <div>
+                            <div class="item-name">Classic Burger</div>
+                            <div class="item-meta">x1</div>
+                        </div>
+                        <div class="item-price">$8.50</div>
+                    </div>
+                    <div class="cart-item">
+                        <div>
+                            <div class="item-name">Crispy Chicken</div>
+                            <div class="item-meta">x2</div>
+                        </div>
+                        <div class="item-price">$17.50</div>
+                    </div>
+                    <div class="cart-item">
+                        <div>
+                            <div class="item-name">Fries</div>
+                            <div class="item-meta">x1</div>
+                        </div>
+                        <div class="item-price">$3.50</div>
+                    </div>
+                    <div class="cart-item">
+                        <div>
+                            <div class="item-name">Lemonade</div>
+                            <div class="item-meta">x2</div>
+                        </div>
+                        <div class="item-price">$6.00</div>
+                    </div>
+                </div>
+                <div class="cart-total">
+                    <span>Total</span>
+                    <span class="amount">$35.50</span>
+                </div>
+                <button class="btn checkout">checkout</button>
+            </aside>
+        </section>
+    </main>
+
     <script src="js/script.js"></script>
 </body>
 </html>
