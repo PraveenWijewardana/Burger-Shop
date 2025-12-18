@@ -1,0 +1,66 @@
+[
+    {
+        "Name": "burger 1",
+        "Path": "media/1.png",
+        "Price": 750,
+        "Rating": 4.2,
+        "category": "burger"
+    },
+    {
+        "Name": "burger 2",
+        "Path": "media/2.png",
+        "Price": 850,
+        "Rating": 4.5,
+        "category": "burger"
+    },
+    {
+        "Name": "burger 3",
+        "Path": "media/3.png",
+        "Price": 1050,
+        "Rating": 4.8,
+        "category": "burger"
+    },
+    {
+        "Name": "burger 4",
+        "Path": "media/4.png",
+        "Price": 950,
+        "Rating": 4.3,
+        "category": "burger"
+    },
+    {
+        "Name": "burger 5",
+        "Path": "media/5.png",
+        "Price": 1150,
+        "Rating": 4.7,
+        "category": "burger"
+    },
+    {
+        "Name": "burger 6",
+        "Path": "media/6.png",
+        "Price": 1250,
+        "Rating": 4.9,
+        "category": "burger"
+    },
+    {
+        "Name": "drink 1",
+        "Path": "media/11.png",
+        "Price": 700,
+        "Rating": 4.1,
+        "category": "drinks"
+    },
+    {
+        "Name": "drink 2",
+        "Path": "media/12.png",
+        "Price": 800,
+        "Rating": 4.4,
+        "category": "drinks"
+    },
+    {
+        "Name": "drink 3",
+        "Path": "media/13.png",
+        "Price": 900,
+        "Rating": 4.6,
+        "category": "drinks"
+    }
+   
+]

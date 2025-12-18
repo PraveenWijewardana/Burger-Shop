@@ -3,180 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Burger Shop</title>
+    <title>BurgerBite - Premium Burgers</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- SVG Filter (include once in your document) -->
-<svg width="0" height="0" style="position: absolute;">
-  <defs>
-    <filter id="glass-distortion" x="0%" y="0%" width="100%" height="100%">
-      <feTurbulence 
-        type="fractalNoise" 
-        baseFrequency="0.012 0.012"
-        numOctaves="2" 
-        seed="92" 
-        result="noise" 
-      />
-      <feGaussianBlur 
-        in="noise" 
-        stdDeviation="2" 
-        result="blurred" 
-      />
-      <feDisplacementMap 
-        in="SourceGraphic" 
-        in2="blurred" 
-        scale="85"
-        xChannelSelector="R" 
-        yChannelSelector="G" 
-      />
-    </filter>
-  </defs>
-</svg>
-
-
-    <div class="bg-video-wrap" aria-hidden="true">
-        <video class="bg-video" autoplay muted loop playsinline>
-            <source src="media/bg.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <div class="bg-overlay"></div>
-    </div>
-
-    <main class="app-shell">
-        <header class="app-header">
-            <div class="brand">burger shop</div>
-            <div class="tagline">Fresh stacks, crispy fries, quick checkout.</div>
-        </header>
-
-        <section class="layout">
-            <section class="liquid-glass-card">
-                <div class="section-title">menu</div>
-                <div class="product-grid">
-                    <article class="product-card">
-                        <div class="thumb" aria-hidden="true"></div>
-                        <div class="product-info">
-                            <div class="name">Classic Burger</div>
-                            <div class="meta">
-                                <span class="price">$8.50</span>
-                                <button class="btn add">add</button>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="product-card">
-                        <div class="thumb" aria-hidden="true"></div>
-                        <div class="product-info">
-                            <div class="name">Smoky BBQ</div>
-                            <div class="meta">
-                                <span class="price">$9.50</span>
-                                <button class="btn add">add</button>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="product-card">
-                        <div class="thumb" aria-hidden="true"></div>
-                        <div class="product-info">
-                            <div class="name">Spicy Fire</div>
-                            <div class="meta">
-                                <span class="price">$9.00</span>
-                                <button class="btn add">add</button>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="product-card">
-                        <div class="thumb" aria-hidden="true"></div>
-                        <div class="product-info">
-                            <div class="name">Double Cheese</div>
-                            <div class="meta">
-                                <span class="price">$10.50</span>
-                                <button class="btn add">add</button>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="product-card">
-                        <div class="thumb" aria-hidden="true"></div>
-                        <div class="product-info">
-                            <div class="name">Crispy Chicken</div>
-                            <div class="meta">
-                                <span class="price">$8.75</span>
-                                <button class="btn add">add</button>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="product-card">
-                        <div class="thumb" aria-hidden="true"></div>
-                        <div class="product-info">
-                            <div class="name">Mushroom Melt</div>
-                            <div class="meta">
-                                <span class="price">$9.25</span>
-                                <button class="btn add">add</button>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="product-card">
-                        <div class="thumb" aria-hidden="true"></div>
-                        <div class="product-info">
-                            <div class="name">Veggie Stack</div>
-                            <div class="meta">
-                                <span class="price">$8.25</span>
-                                <button class="btn add">add</button>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="product-card">
-                        <div class="thumb" aria-hidden="true"></div>
-                        <div class="product-info">
-                            <div class="name">Truffle Deluxe</div>
-                            <div class="meta">
-                                <span class="price">$11.00</span>
-                                <button class="btn add">add</button>
-                            </div>
-                        </div>
-                    </article>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">
+                <span class="logo-text">Jabel.</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
+                <li class="nav-item"><a href="#products" class="nav-link">Menu</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Reservation</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
+            </ul>
+            <div class="navbar-right">
+                <div class="cart-icon">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-count">3</span>
                 </div>
-            </section>
+                <div class="user-profile">
+                    <img src="https://via.placeholder.com/40" alt="User" class="profile-img">
+                    <span class="username">M Jabel</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
 
-            <aside class="cart">
-                <div class="section-title">cart</div>
-                <div class="cart-items">
-                    <div class="cart-item">
-                        <div>
-                            <div class="item-name">Classic Burger</div>
-                            <div class="item-meta">x1</div>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <span class="badge">THE ORIGINAL BURGER</span>
+                <h1 class="hero-title">SAVORY &<br>DELICIOUS</h1>
+                <p class="hero-description">
+                    Delicious burgers made from high-quality Australian beef, carefully processed to create a juicy and flavorful taste.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary">Explore Now</button>
+                    <button class="btn btn-secondary">See Menu <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="media/image.png" alt="Savory Burger" class="burger-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+
+        <div class="products-container">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="media/1.png" alt="Hot Chicken Burger">
+                    <span class="price-badge">$5.66</span>
+                </div>
+                <div class="product-info">
+                    <h3>Hot Chicken B...</h3>
+                    <div class="product-footer">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.9</span>
                         </div>
-                        <div class="item-price">$8.50</div>
-                    </div>
-                    <div class="cart-item">
-                        <div>
-                            <div class="item-name">Crispy Chicken</div>
-                            <div class="item-meta">x2</div>
+                        <div class="product-actions">
+                            <button class="action-btn"><i class="fas fa-plus"></i></button>
+                            <button class="action-btn"><i class="fas fa-heart"></i></button>
+                            <button class="action-btn"><i class="fas fa-trash"></i></button>
                         </div>
-                        <div class="item-price">$17.50</div>
-                    </div>
-                    <div class="cart-item">
-                        <div>
-                            <div class="item-name">Fries</div>
-                            <div class="item-meta">x1</div>
-                        </div>
-                        <div class="item-price">$3.50</div>
-                    </div>
-                    <div class="cart-item">
-                        <div>
-                            <div class="item-name">Lemonade</div>
-                            <div class="item-meta">x2</div>
-                        </div>
-                        <div class="item-price">$6.00</div>
                     </div>
                 </div>
-                <div class="cart-total">
-                    <span>Total</span>
-                    <span class="amount">$35.50</span>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="media/2.png" alt="Veg & Chicken Burger">
+                    <span class="price-badge">$8.55</span>
                 </div>
-                <button class="btn checkout">checkout</button>
-            </aside>
-        </section>
-    </main>
+                <div class="product-info">
+                    <h3>Veg & Chicken...</h3>
+                    <div class="product-footer">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.4</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="action-btn"><i class="fas fa-plus"></i></button>
+                            <button class="action-btn"><i class="fas fa-heart"></i></button>
+                            <button class="action-btn"><i class="fas fa-trash"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="media/3.png" alt="Chicken Cheese Burger">
+                    <span class="price-badge">$7.20</span>
+                </div>
+                <div class="product-info">
+                    <h3>Chicken Chee...</h3>
+                    <div class="product-footer">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.7</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="action-btn"><i class="fas fa-plus"></i></button>
+                            <button class="action-btn"><i class="fas fa-heart"></i></button>
+                            <button class="action-btn"><i class="fas fa-trash"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <script src="js/script.js"></script>
 </body>
