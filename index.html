@@ -1,37 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BurgerBite - Premium Burgers</title>
+    <title>Mr.Burger</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
     <!-- Navigation Bar -->
     <nav class="navbar">
         <div class="navbar-container">
             <div class="navbar-logo">
-                <span class="logo-text">Jabel.</span>
+                <span class="logo-text">Mr.Burger</span>
             </div>
             <ul class="nav-menu">
                 <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
                 <li class="nav-item"><a href="#products" class="nav-link">Menu</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Reservation</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Reservation </a></li>
+
             </ul>
-            <div class="navbar-right">
-                <div class="cart-icon">
-                    <i class="fas fa-shopping-bag"></i>
-                    <span class="cart-count">3</span>
-                </div>
+            <div class="navbar-right m-2">
+                <a href="cart.html">
+                    <div class="cart-icon">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span class="cart-count" id="count">0</span>
+                    </div>
+                </a>
+                <a href="login&singup.html" style="text-decoration:none;"></a>
                 <div class="user-profile">
-                    <img src="https://via.placeholder.com/40" alt="User" class="profile-img">
-                    <span class="username">M Jabel</span>
-                    <i class="fas fa-chevron-down"></i>
+                    <img src="media/user.png" alt="User" class="profile-img">
+                    <span class="username">Log IN</span>
                 </div>
-            </div>
+            </div></a>
         </div>
     </nav>
 
@@ -42,7 +46,8 @@
                 <span class="badge">THE ORIGINAL BURGER</span>
                 <h1 class="hero-title">SAVORY &<br>DELICIOUS</h1>
                 <p class="hero-description">
-                    Delicious burgers made from high-quality Australian beef, carefully processed to create a juicy and flavorful taste.
+                    Delicious burgers made from high-quality Australian beef, carefully processed to create a juicy and
+                    flavorful taste.
                 </p>
                 <div class="hero-buttons">
                     <button class="btn btn-primary">Explore Now</button>
@@ -56,74 +61,52 @@
     </section>
 
     <!-- Products Section -->
-    <section class="products" id="products">
+    <section class="products">
 
-        <div class="products-container">
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="media/1.png" alt="Hot Chicken Burger">
-                    <span class="price-badge">$5.66</span>
-                </div>
-                <div class="product-info">
-                    <h3>Hot Chicken B...</h3>
-                    <div class="product-footer">
-                        <div class="rating">
-                            <i class="fas fa-star"></i>
-                            <span>4.9</span>
-                        </div>
-                        <div class="product-actions">
-                            <button class="action-btn"><i class="fas fa-plus"></i></button>
-                            <button class="action-btn"><i class="fas fa-heart"></i></button>
-                            <button class="action-btn"><i class="fas fa-trash"></i></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="products-container" id="products">
 
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="media/2.png" alt="Veg & Chicken Burger">
-                    <span class="price-badge">$8.55</span>
-                </div>
-                <div class="product-info">
-                    <h3>Veg & Chicken...</h3>
-                    <div class="product-footer">
-                        <div class="rating">
-                            <i class="fas fa-star"></i>
-                            <span>4.4</span>
-                        </div>
-                        <div class="product-actions">
-                            <button class="action-btn"><i class="fas fa-plus"></i></button>
-                            <button class="action-btn"><i class="fas fa-heart"></i></button>
-                            <button class="action-btn"><i class="fas fa-trash"></i></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="media/3.png" alt="Chicken Cheese Burger">
-                    <span class="price-badge">$7.20</span>
-                </div>
-                <div class="product-info">
-                    <h3>Chicken Chee...</h3>
-                    <div class="product-footer">
-                        <div class="rating">
-                            <i class="fas fa-star"></i>
-                            <span>4.7</span>
-                        </div>
-                        <div class="product-actions">
-                            <button class="action-btn"><i class="fas fa-plus"></i></button>
-                            <button class="action-btn"><i class="fas fa-heart"></i></button>
-                            <button class="action-btn"><i class="fas fa-trash"></i></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
 
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Mr.Burger</h3>
+                <p>Delicious burgers made from high-quality ingredients for your satisfaction.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Menu</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <p>Email: info@mrburger.com</p>
+                <p>Phone: +1 (555) 123-4567</p>
+                <p>Address: 123 Burger Street, Food City</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Mr.Burger. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="js/script.js"></script>
 </body>
+
 </html>

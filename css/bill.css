@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+:root{
+	--bg: #f6f8fb;
+	--card: #ffffff;
+	--muted: #6b7280;
+	--accent: linear-gradient(90deg,#ff6b35,#ff8a4b);
+	--accent-solid: #ff6b35;
+	--accent-2: #ffb397;
+	--text: #0f172a;
+	--glass: rgba(15,23,42,0.04);
+}
+
+*{box-sizing:border-box}
+body{
+	font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+	background: linear-gradient(180deg,var(--bg),#ffffff);
+	color:var(--text);
+	margin:0;
+	-webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing:grayscale;
+}
+
+.invoice-wrap{
+	min-height:100vh;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	padding:48px 16px;
+}
+
+.invoice{
+	width:100%;
+	max-width:820px;
+	background:var(--card);
+	border-radius:14px;
+	box-shadow:0 14px 40px rgba(15,23,42,0.08);
+	padding:28px;
+	border:1px solid var(--glass);
+}
+
+.invoice-header{
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	gap:16px;
+	margin-bottom:20px;
+	padding-bottom:12px;
+	border-bottom:1px solid #fbf0ec;
+}
+.brand{display:flex;align-items:center;gap:12px}
+.brand .logo{
+	width:56px;height:56px;border-radius:10px;background:linear-gradient(135deg,#fff6f3, #fff);display:flex;align-items:center;justify-content:center;box-shadow:0 6px 18px rgba(255,107,53,0.12);font-weight:700;color:var(--accent-solid)
+}
+.brand h1{margin:0;font-size:20px;letter-spacing:0.2px}
+.brand .muted{margin:4px 0 0;color:var(--muted);font-size:13px}
+.invoice-meta{ text-align:right; color:var(--muted); font-size:14px }
+
+.invoice-info{display:flex;justify-content:space-between;gap:24px;margin-bottom:20px}
+.invoice-info h3{margin:0 0 6px 0;font-size:14px}
+.invoice-info p{margin:0;color:var(--muted);font-size:14px}
+
+.actions{display:flex;gap:10px;margin-top:12px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border-radius:10px;border:0;cursor:pointer;font-weight:600}
+.btn-print{background:transparent;color:var(--accent-solid);border:1px solid rgba(255,107,53,0.12)}
+.btn-primary{background:var(--accent-solid);color:white;box-shadow:0 8px 22px rgba(255,107,53,0.12)}
+
+.invoice-items table{width:100%;border-collapse:collapse}
+.invoice-items thead th{ text-align:left;color:var(--muted);font-weight:600;padding-bottom:8px;border-bottom:1px solid #eef2f7 }
+.invoice-items tbody td{padding:12px 0;border-bottom:1px dashed #f1f5f9}
+.invoice-items tbody tr:hover td{background:linear-gradient(90deg,rgba(255,107,53,0.03), rgba(255,138,75,0.02))}
+.invoice-items .center{text-align:center}
+.invoice-items .right{text-align:right}
+
+.invoice-summary{max-width:320px;margin-left:auto;margin-top:18px}
+.summary-lines{display:flex;justify-content:space-between;padding:6px 0;color:var(--muted)}
+.summary-total{display:flex;justify-content:space-between;padding:10px 0;font-weight:700;font-size:18px;border-top:1px solid #f1f5f9;margin-top:8px}
+
+.badge{display:inline-block;padding:4px 8px;border-radius:999px;background:linear-gradient(90deg,#fff4ee,#fff8f5);color:var(--accent-solid);font-weight:700;font-size:12px}
+
+.invoice-footer{margin-top:20px;text-align:center}
+.invoice-footer .muted{color:var(--muted);font-size:14px}
+
+@media (max-width:640px){
+	.invoice{padding:18px;border-radius:10px}
+	.invoice-info{flex-direction:column}
+	.invoice-meta{ text-align:left }
+	.invoice-summary{max-width:100%;margin:16px 0 0 0}
+}
+
+@media print{
+	body{background:white}
+	.invoice{box-shadow:none;border:0}
+}

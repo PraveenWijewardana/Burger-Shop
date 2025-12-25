@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bill.css">
+</head>
+<body>
+    <main class="invoice-wrap">
+        <article class="invoice">
+            <header class="invoice-header">
+                <div class="brand">
+                    <div class="logo">Mr.B</div>
+                    <div>
+                      <h1>Mr. Burger</h1>
+                      <p class="muted">Delicious food delivered fast</p>
+                    </div>
+                </div>
+                <div class="invoice-meta">
+                    <div>Invoice <strong>#1001</strong></div>
+                    <div class="muted">Date: 2025-12-25</div>
+                    <div class="actions">
+                        <button class="btn btn-print" onclick="window.print()">Print</button>
+                        <button class="btn btn-primary" id="downloadPdf">Download</button>
+                    </div>
+                </div>
+            </header>
+
+            <section class="invoice-info">
+                <div>
+                    <h3>Customer</h3>
+                    <p>John Doe<br>123 Main St.<br>City, Country</p>
+                </div>
+                <div>
+                    <h3>Delivery</h3>
+                    <p>ETA: 30-40 mins<br>Method: Home delivery</p>
+                </div>
+            </section>
+
+            <section class="invoice-items">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th class="center">Qty</th>
+                            <th class="right">Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Classic Cheeseburger</td>
+                            <td class="center">2</td>
+                            <td class="right">$10.00</td>
+                        </tr>
+                        <tr>
+                            <td>French Fries (Large)</td>
+                            <td class="center">1</td>
+                            <td class="right">$3.50</td>
+                        </tr>
+                        <tr>
+                            <td>Soft Drink</td>
+                            <td class="center">2</td>
+                            <td class="right">$4.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section class="invoice-summary">
+                <div class="summary-lines">
+                    <div>Subtotal</div>
+                    <div>$17.50</div>
+                </div>
+                <div class="summary-lines">
+                    <div>Tax (8%)</div>
+                    <div>$1.40</div>
+                </div>
+                <div class="summary-lines">
+                    <div>Delivery</div>
+                    <div>$2.00</div>
+                </div>
+                <div class="summary-total">
+                    <div>Total</div>
+                    <div>$20.90</div>
+                </div>
+            </section>
+
+            <footer class="invoice-footer">
+                <p class="muted">Thank you for ordering from Burger Shop — enjoy your meal!</p>
+            </footer>
+        </article>
+    </main>
+
+    <script>
+
+    </script>
+</body>
+</html>

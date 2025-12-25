@@ -1,5 +1,6 @@
 [
     {
+        "Id": 1,
         "Name": "burger 1",
         "Path": "media/1.png",
         "Price": 750,
@@ -7,6 +8,7 @@
         "category": "burger"
     },
     {
+        "Id": 2,
         "Name": "burger 2",
         "Path": "media/2.png",
         "Price": 850,
@@ -14,6 +16,7 @@
         "category": "burger"
     },
     {
+        "Id": 3,
         "Name": "burger 3",
         "Path": "media/3.png",
         "Price": 1050,
@@ -21,6 +24,7 @@
         "category": "burger"
     },
     {
+        "Id": 4,
         "Name": "burger 4",
         "Path": "media/4.png",
         "Price": 950,
@@ -28,6 +32,7 @@
         "category": "burger"
     },
     {
+        "Id": 5,    
         "Name": "burger 5",
         "Path": "media/5.png",
         "Price": 1150,
@@ -35,13 +40,15 @@
         "category": "burger"
     },
     {
+        "Id": 6,
         "Name": "burger 6",
         "Path": "media/6.png",
         "Price": 1250,
         "Rating": 4.9,
         "category": "burger"
     },
-    {
+    {   
+        "Id": 7,
         "Name": "drink 1",
         "Path": "media/11.png",
         "Price": 700,
@@ -49,6 +56,7 @@
         "category": "drinks"
     },
     {
+        "Id": 8,
         "Name": "drink 2",
         "Path": "media/12.png",
         "Price": 800,
@@ -56,6 +64,7 @@
         "category": "drinks"
     },
     {
+        "Id": 9,
         "Name": "drink 3",
         "Path": "media/13.png",
         "Price": 900,

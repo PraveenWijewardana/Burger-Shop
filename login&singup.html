@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Signup - Mr.Burger</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="auth-body">
+    <div class="auth-container">
+        <div class="brand">
+            <i class="fa-solid fa-burger"></i>
+            <span class="logo-text">Mr.Burger</span>
+        </div>
+
+        <div class="auth-card">
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="signin" onclick="moveSingin();">Sign In</button>
+                <button class="tab-btn" data-tab="signup" onclick="moveLogin();">Sign Up</button>
+            </div>
+
+            <div class="tab-content active" id="signin">
+                <form id="signin-form" novalidate>
+                    <div class="field">
+                        <label for="signin-email">Email</label>
+                        <input type="email" id="signin-email" name="email" placeholder="you@example.com" required>
+                        <span class="error" id="signin-email-error"></span>
+                    </div>
+                    <div class="field password-field">
+                        <label for="signin-password">Password</label>
+                        <input type="password" id="signin-password" name="password" placeholder="••••••••" required minlength="8">
+                        <button type="button" class="toggle-password" aria-label="Toggle password visibility">
+                            <i class="fa-regular fa-eye"></i>
+                        </button>
+                        <span class="error" id="signin-password-error"></span>
+                    </div>
+                    <div class="actions">
+                        <button class="btn btn-primary" type="submit">Sign In</button>
+                    </div>
+                    <div class="alt">
+                        <span>Don't have an account?</span>
+                        <a href="#" data-switch="signup">Create one</a>
+                    </div>
+                </form>
+            </div>
+
+            <div class="tab-content" id="signup">
+                <form id="signup-form" novalidate>
+                    <div class="field">
+                        <label for="signup-name">Full Name</label>
+                        <input type="text" id="signup-name" name="name" placeholder="Your name" required minlength="2">
+                        <span class="error" id="signup-name-error"></span>
+                    </div>
+                    <div class="field">
+                        <label for="signup-email">Email</label>
+                        <input type="email" id="signup-email" name="email" placeholder="you@example.com" required>
+                        <span class="error" id="signup-email-error"></span>
+                    </div>
+                    <div class="field password-field">
+                        <label for="signup-password">Password</label>
+                        <input type="password" id="signup-password" name="password" placeholder="At least 8 characters" required minlength="8">
+                        <button type="button" class="toggle-password" aria-label="Toggle password visibility">
+                            <i class="fa-regular fa-eye"></i>
+                        </button>
+                        <span class="error" id="signup-password-error"></span>
+                    </div>
+                    <div class="field password-field">
+                        <label for="signup-password-confirm">Confirm Password</label>
+                        <input type="password" id="signup-password-confirm" name="password_confirm" placeholder="Repeat password" required minlength="8">
+                        <button type="button" class="toggle-password" aria-label="Toggle password visibility">
+                            <i class="fa-regular fa-eye"></i>
+                        </button>
+                        <span class="error" id="signup-password-confirm-error"></span>
+                    </div>
+                    <div class="actions">
+                        <button class="btn btn-primary" type="submit">Create Account</button>
+                    </div>
+                    <div class="alt">
+                        <span>Already have an account?</span>
+                        <a href="#" data-switch="signin">Sign in</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="toast" id="auth-toast" role="status" aria-live="polite" aria-atomic="true"></div>
+    </div>
+
+    <script src="js/login.JS"></script>
+</body>
+</html>
