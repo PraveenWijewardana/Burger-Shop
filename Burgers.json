@@ -3,7 +3,7 @@
         "Id": 1,
         "Name": "burger 1",
         "Path": "media/1.png",
-        "Price": 750,
+        "Price": 750.00,
         "Rating": 4.2,
         "category": "burger"
     },
@@ -11,7 +11,7 @@
         "Id": 2,
         "Name": "burger 2",
         "Path": "media/2.png",
-        "Price": 850,
+        "Price": 850.00,
         "Rating": 4.5,
         "category": "burger"
     },
@@ -19,7 +19,7 @@
         "Id": 3,
         "Name": "burger 3",
         "Path": "media/3.png",
-        "Price": 1050,
+        "Price": 1050.00,
         "Rating": 4.8,
         "category": "burger"
     },
@@ -27,7 +27,7 @@
         "Id": 4,
         "Name": "burger 4",
         "Path": "media/4.png",
-        "Price": 950,
+        "Price": 950.00,
         "Rating": 4.3,
         "category": "burger"
     },
@@ -35,7 +35,7 @@
         "Id": 5,    
         "Name": "burger 5",
         "Path": "media/5.png",
-        "Price": 1150,
+        "Price": 1150.00,
         "Rating": 4.7,
         "category": "burger"
     },
@@ -43,7 +43,7 @@
         "Id": 6,
         "Name": "burger 6",
         "Path": "media/6.png",
-        "Price": 1250,
+        "Price": 1250.00,
         "Rating": 4.9,
         "category": "burger"
     },
@@ -51,7 +51,7 @@
         "Id": 7,
         "Name": "drink 1",
         "Path": "media/11.png",
-        "Price": 700,
+        "Price": 700.00,
         "Rating": 4.1,
         "category": "drinks"
     },
@@ -59,7 +59,7 @@
         "Id": 8,
         "Name": "drink 2",
         "Path": "media/12.png",
-        "Price": 800,
+        "Price": 800.00,
         "Rating": 4.4,
         "category": "drinks"
     },
@@ -67,7 +67,7 @@
         "Id": 9,
         "Name": "drink 3",
         "Path": "media/13.png",
-        "Price": 900,
+        "Price": 900.00,
         "Rating": 4.6,
         "category": "drinks"
     }
